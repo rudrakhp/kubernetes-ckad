@@ -1,0 +1,19 @@
+domain: rudrakhp.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: kubernetes-ckad
+repo: github.com/rudrakhp/kubernetes-ckad
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: rudrakhp.com
+  group: demo
+  kind: PodSecretDemo
+  path: github.com/rudrakhp/kubernetes-ckad/api/v1alpha1
+  version: v1alpha1
+version: "3"
